@@ -1,0 +1,23 @@
+.navbar {
+  background-color: #38a3a5;
+  margin-top: 10rem;
+}
+
+.navitem {
+}
+
+.navlink {
+  color: #80ed99 !important;
+  font-weight: bold;
+  padding: 2rem !important;
+  text-align: center;
+}
+
+.navlink:hover {
+  color: #c7f9cc !important;
+}
+
+.active {
+  color: #c7f9cc !important;
+  background-color: #80ed99;
+}

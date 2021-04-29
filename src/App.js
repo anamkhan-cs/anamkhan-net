@@ -1,23 +1,20 @@
 import logo from "./logo.svg";
 import "./App.css";
+import { Link } from "react-scroll";
+import { Button } from "reactstrap";
+import { BrowserRouter, Route } from "react-router-dom";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>Anam kHna</p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import NavbarMenu from "./Navbar/Navbar";
+
+const App = () => (
+  <BrowserRouter>
+    <NavbarMenu />
+    <Route path="/" />
+    <Route path="/experiences" />
+    <Route path="/skills" />
+    <Route path="/projects" />
+    <Route path="/contact" />
+  </BrowserRouter>
+);
 
 export default App;
