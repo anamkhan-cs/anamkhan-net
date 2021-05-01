@@ -24,7 +24,7 @@ const NavbarMenu = (props) => {
   return (
     <Navbar
       light
-      expand="md"
+      expand="sm"
       className="p-0 d-flex align-items-end justify-content-end"
       fixed="top"
     >

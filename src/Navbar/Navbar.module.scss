@@ -4,12 +4,13 @@
 
 .navbar {
   background-color: #472d30;
-  margin-top: 10rem;
   @include media-breakpoint-down(sm) {
     margin-top: 0;
+    height: 10vh;
   }
   position: fixed;
   right: 0px;
+  height: 80vh;
 }
 
 .navitem {
@@ -24,7 +25,10 @@
   color: #e26d5c !important;
   font-weight: bold;
   text-align: center;
-  padding: 2rem !important;
+  @include media-breakpoint-down(sm) {
+    padding: 1rem !important;
+  }
+  padding: 3rem !important;
   text-transform: uppercase;
 }
 

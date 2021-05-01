@@ -1,3 +1,7 @@
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+
 .header {
   font-weight: bolder;
   border-bottom: 0.5rem solid #723d46;
@@ -20,10 +24,15 @@
   padding-top: 3rem !important;
   background-color: #472d30;
   width: 105vw;
-  height: 30vh;
+  height: 10vh;
+  z-index: 1;
 }
 
 .icons {
   color: #723d46;
   margin-right: 3rem;
+  font-size: 40px;
+  @include media-breakpoint-down(sm) {
+    font-size: 20px;
+  }
 }

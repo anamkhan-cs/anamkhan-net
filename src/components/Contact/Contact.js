@@ -32,7 +32,7 @@ const Contact = () => {
         <footer className="footer">
           <div
             className={classnames(
-              "d-flex justify-content-center",
+              "d-flex justify-content-center align-items-center",
               iconContainer
             )}
           >
@@ -41,7 +41,7 @@ const Contact = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <GrMail className={icons} size={60} />
+              <GrMail className={icons} />
             </a>
 
             <a
@@ -49,7 +49,7 @@ const Contact = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <GrLinkedin className={icons} size={60} />
+              <GrLinkedin className={icons} />
             </a>
 
             <a
@@ -57,7 +57,7 @@ const Contact = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <GrGithub className={icons} size={60} />
+              <GrGithub className={icons} />
             </a>
 
             <a
@@ -65,7 +65,7 @@ const Contact = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <GrFacebookOption className={icons} size={60} />
+              <GrFacebookOption className={icons} />
             </a>
 
             <a
@@ -73,7 +73,7 @@ const Contact = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <GrInstagram className={icons} size={60} />
+              <GrInstagram className={icons} />
             </a>
           </div>
         </footer>
