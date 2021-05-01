@@ -30,6 +30,16 @@ const Contact = () => {
             Connect with me through my social media links below (there's quite a
             few), or feel free to shoot me an email!
           </p>
+          <p>
+            You can see this project on my{" "}
+            <a
+              href="https://github.com/anamkhan2/anamkhan-net"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Github
+            </a>
+          </p>
           <p>Here's a picture of my cat Smoosh for making it this far!</p>
           <img src={smoosh} alt="My cat" className={picture} />
         </div>
