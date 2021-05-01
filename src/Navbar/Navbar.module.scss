@@ -1,27 +1,37 @@
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+
 .navbar {
-  background-color: #38a3a5;
+  background-color: #472d30;
   margin-top: 10rem;
+  @include media-breakpoint-down(sm) {
+    margin-top: 0;
+  }
+  position: fixed;
+  right: 0px;
 }
 
 .navitem {
-  padding: 1rem !important;
+  // padding: 2rem !important;
 }
 
 .navbartoggler {
-  background-color: #38a3a5 !important;
+  background-color: #472d30 !important;
 }
 
 .navlink {
-  color: #80ed99 !important;
+  color: #e26d5c !important;
   font-weight: bold;
   text-align: center;
+  padding: 2rem !important;
+  text-transform: uppercase;
 }
 
 .navlink:hover {
-  color: #c7f9cc !important;
+  color: #ffe1a8 !important;
 }
 
-.navlink:active {
-  color: #c7f9cc !important;
-  background-color: #80ed99;
+.activelink {
+  background-color: #723d46 !important;
 }

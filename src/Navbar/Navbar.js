@@ -1,79 +1,98 @@
 import React, { useState } from "react";
-import { Collapse, Navbar, NavbarToggler, Nav, NavItem } from "reactstrap";
-// import { NavLink as RRDNavLink, NavLink } from "react-router-dom";
+import {
+  Collapse,
+  Navbar,
+  NavbarToggler,
+  Nav,
+  NavItem,
+  NavLink,
+} from "reactstrap";
+import classnames from "classnames";
+import { NavLink as RRDNavlink } from "react-router-dom";
 
-import { Link, glide } from "react-tiger-transition";
-import { navbar, navitem, navlink, navbartoggler } from "./Navbar.module.scss";
-import "react-tiger-transition/styles/main.min.css";
-
-// inject css
-glide({
-  name: "glide-top",
-  direction: "top",
-});
+import {
+  navbar,
+  navitem,
+  navlink,
+  navbartoggler,
+  activelink,
+} from "./Navbar.module.scss";
 
 const NavbarMenu = (props) => {
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => setIsOpen(!isOpen);
-
   return (
-    <Navbar light expand="lg" className="p-0" fixed="top">
+    <Navbar
+      light
+      expand="md"
+      className="p-0 d-flex align-items-end justify-content-end"
+      fixed="top"
+    >
       <NavbarToggler
         onClick={toggle}
-        className="ml-4"
-        className={navbartoggler}
+        className={classnames("ml-4", navbartoggler)}
       />
       <Collapse isOpen={isOpen} navbar>
         <Nav className="ml-auto" navbar vertical>
           <div className={navbar}>
             <NavItem className={navitem}>
-              <Link to="/" transition="glide-top" exact className={navlink}>
-                About
-              </Link>
-            </NavItem>
-
-            <NavItem className={navitem}>
-              <Link
-                to="/experience"
-                transition="glide-top"
+              <NavLink
+                to="/"
                 exact
                 className={navlink}
+                activeClassName={activelink}
+                tag={RRDNavlink}
               >
-                Experiences
-              </Link>
+                About
+              </NavLink>
             </NavItem>
 
             <NavItem className={navitem}>
-              <Link
-                to="/skills"
-                transition="glide-top"
+              <NavLink
+                to="/experience"
                 exact
                 className={navlink}
+                activeClassName={activelink}
+                tag={RRDNavlink}
+              >
+                Experience
+              </NavLink>
+            </NavItem>
+
+            <NavItem className={navitem}>
+              <NavLink
+                to="/skills"
+                exact
+                className={navlink}
+                activeClassName={activelink}
+                tag={RRDNavlink}
               >
                 Skills
-              </Link>
+              </NavLink>
             </NavItem>
 
             <NavItem className={navitem}>
-              <Link
+              <NavLink
                 to="/projects"
-                transition="glide-top"
                 exact
                 className={navlink}
+                activeClassName={activelink}
+                tag={RRDNavlink}
               >
                 Projects
-              </Link>
+              </NavLink>
             </NavItem>
 
             <NavItem className={navitem}>
-              <Link
+              <NavLink
                 to="/contact"
-                transition="glide-top"
                 exact
                 className={navlink}
+                activeClassName={activelink}
+                tag={RRDNavlink}
               >
                 Contact
-              </Link>
+              </NavLink>
             </NavItem>
           </div>
         </Nav>
