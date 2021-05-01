@@ -3,10 +3,17 @@
   margin-top: 10rem;
 }
 
+.navitem {
+  padding: 1rem !important;
+}
+
+.navbartoggler {
+  background-color: #38a3a5 !important;
+}
+
 .navlink {
   color: #80ed99 !important;
   font-weight: bold;
-  padding: 2rem !important;
   text-align: center;
 }
 
@@ -14,7 +21,7 @@
   color: #c7f9cc !important;
 }
 
-.active {
+.navlink:active {
   color: #c7f9cc !important;
   background-color: #80ed99;
 }
