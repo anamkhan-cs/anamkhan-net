@@ -1,11 +1,11 @@
 import { Container } from "reactstrap";
-import { home } from "./Main.module.scss";
+import { home, content } from "./Main.module.scss";
 
 const Main = () => {
   return (
     <>
       <Container fluid className={home}>
-        <h1>
+        <div className={content}>
           <div>Sleek</div>
           <div className="with--accent">animated</div>
           <div>views</div>
@@ -64,7 +64,7 @@ const Main = () => {
             Can you help translate this site into a foreign language ? Please
             email us with details if you can help.
           </div>
-        </h1>
+        </div>
       </Container>
     </>
   );

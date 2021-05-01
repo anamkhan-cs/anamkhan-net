@@ -1,4 +1,17 @@
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+
 .home {
   background: url("background.jpg") fixed center no-repeat;
   background-size: cover;
+}
+
+.content {
+  margin-right: 12rem;
+  @include media-breakpoint-down(sm) {
+    margin-right: 5rem;
+  }
+  padding-top: 3rem;
+  color: #ffffff;
 }

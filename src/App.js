@@ -16,62 +16,49 @@ import { play, exit } from "./timelines";
 
 const App = () => (
   <Router>
-    <Row>
-      <Route
-        render={({ location }) => {
-          const { pathname, key } = location;
+    <Route
+      render={({ location }) => {
+        const { pathname, key } = location;
 
-          return (
-            <>
-              <TransitionGroup component={null}>
-                <Transition
-                  key={key}
-                  appear={true}
-                  onEnter={(node, appears) => play(pathname, node, appears)}
-                  onExit={(node, appears) => exit(node, appears)}
-                  timeout={{ enter: 750, exit: 150 }}
-                >
-                  <Switch location={location}>
-                    <Route exact path="/">
-                      <Col xs="10">
-                        <Main />
-                      </Col>
-                    </Route>
+        return (
+          <>
+            <TransitionGroup component={null}>
+              <Transition
+                key={key}
+                appear={true}
+                onEnter={(node, appears) => play(pathname, node, appears)}
+                onExit={(node, appears) => exit(node, appears)}
+                timeout={{ enter: 750, exit: 150 }}
+              >
+                <Switch location={location}>
+                  <Route exact path="/">
+                    <Main />
+                  </Route>
 
-                    <Route exact path="/experience">
-                      <Col xs="10">
-                        <Experience />
-                      </Col>
-                    </Route>
+                  <Route exact path="/experience">
+                    <Experience />
+                  </Route>
 
-                    <Route exact path="/skills">
-                      <Col xs="10">
-                        <Skills />
-                      </Col>
-                    </Route>
+                  <Route exact path="/skills">
+                    <Skills />
+                  </Route>
 
-                    <Route exact path="/projects">
-                      <Col xs="10">
-                        <Projects />
-                      </Col>
-                    </Route>
+                  <Route exact path="/projects">
+                    <Projects />
+                  </Route>
 
-                    <Route exact path="/contact">
-                      <Col xs="10">
-                        <Contact />
-                      </Col>
-                    </Route>
-                  </Switch>
-                </Transition>
-              </TransitionGroup>
-            </>
-          );
-        }}
-      />
-      <Col xs="2">
-        <NavbarMenu />
-      </Col>
-    </Row>
+                  <Route exact path="/contact">
+                    <Contact />
+                  </Route>
+                </Switch>
+              </Transition>
+            </TransitionGroup>
+          </>
+        );
+      }}
+    />
+
+    <NavbarMenu />
   </Router>
 );
 
