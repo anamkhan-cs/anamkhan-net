@@ -26,7 +26,7 @@ const Contact = () => {
         <div className={contentContainer}>
           <p>
             If you would like to connect, my social media links are below
-            (there's quite a few lot), or feel free to just send me an email!
+            (there's quite a few), or feel free to shoot me an email!
           </p>
           <p>
             Here's a picture of my cat (her name is Smoosh) as a reward for
