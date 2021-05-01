@@ -10,6 +10,7 @@ import {
 } from "reactstrap";
 import classnames from "classnames";
 import { NavLink as RRDNavlink } from "react-router-dom";
+import { MdMenu } from "react-icons/md";
 
 import {
   navbar,
@@ -33,7 +34,9 @@ const NavbarMenu = (props) => {
         <NavbarToggler
           onClick={toggle}
           className={classnames("ml-4", navbartoggler)}
-        />
+        >
+          <MdMenu size={28} color="#ffb703" />
+        </NavbarToggler>
         <Collapse isOpen={isOpen} navbar>
           <Nav className="ml-auto" navbar vertical>
             <div className={navbar}>

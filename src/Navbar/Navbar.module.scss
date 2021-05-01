@@ -3,14 +3,14 @@
 @import "~bootstrap/scss/mixins";
 
 .navbar {
-  background-color: #8ecae6;
+  background-color: #a0d1e7;
   @include media-breakpoint-down(sm) {
     margin-top: 0;
-    height: 35vh;
+    height: 34vh;
   }
   position: fixed;
   right: 0px;
-  height: 75vh;
+  height: 73vh;
 }
 
 .navitem {
@@ -18,7 +18,7 @@
 }
 
 .navbartoggler {
-  background-color: #8ecae6 !important;
+  background-color: #a0d1e7 !important;
   width: 7.5rem !important;
 }
 

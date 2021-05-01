@@ -22,16 +22,15 @@ const Contact = () => {
   return (
     <>
       <Container className={container} fluid>
-        <h1 className={header}>Contact</h1>
+        <div>
+          <h1 className={header}>Contact</h1>
+        </div>
         <div className={contentContainer}>
           <p>
-            If you would like to connect, my social media links are below
-            (there's quite a few), or feel free to shoot me an email!
+            Connect with me through my social media links below (there's quite a
+            few), or feel free to shoot me an email!
           </p>
-          <p>
-            Here's a picture of my cat (her name is Smoosh) as a reward for
-            making it this far!
-          </p>
+          <p>Here's a picture of my cat Smoosh for making it this far!</p>
           <img src={smoosh} alt="My cat" className={picture} />
         </div>
       </Container>

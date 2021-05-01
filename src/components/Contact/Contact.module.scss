@@ -2,17 +2,15 @@
 @import "~bootstrap/scss/variables";
 @import "~bootstrap/scss/mixins";
 
+.container {
+}
+
 .header {
   font-weight: bolder;
   border-bottom: 0.3rem solid #fb8500;
   text-transform: uppercase;
   margin-right: 14rem;
   margin-top: 4rem;
-}
-
-.container {
-  margin-top: 4rem;
-  // margin-bottom: 10rem;
 }
 
 .contentContainer {
@@ -26,13 +24,12 @@
 }
 
 .iconContainer {
-  margin-top: 5rem;
   border-top: 0.1rem solid #fb8500;
-  padding-top: 3rem !important;
-  background-color: #8ecae6;
-  width: 105vw;
-  height: 10vh;
-  z-index: 1;
+  background-color: #023047;
+  position: fixed;
+  bottom: 0;
+  width: 105%;
+  padding: 2rem 0 2rem 0;
 }
 
 .icons {
