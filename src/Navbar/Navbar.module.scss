@@ -3,14 +3,13 @@
 @import "~bootstrap/scss/mixins";
 
 .navbar {
-  background-color: #a0d1e7;
+  background-color: rgba(255, 205, 178, 0.7) !important;
   @include media-breakpoint-down(sm) {
-    margin-top: 0;
-    height: 50vh;
+    height: 28vh;
   }
   position: fixed;
   right: 0px;
-  height: 73vh;
+  height: 75 vh;
 }
 
 .navitem {
@@ -18,7 +17,7 @@
 }
 
 .navbartoggler {
-  background-color: #a0d1e7 !important;
+  background-color: rgba(255, 205, 178, 0.7) !important;
   width: 7.5rem !important;
 }
 
@@ -27,7 +26,7 @@
   font-weight: bold;
   text-align: center;
   @include media-breakpoint-down(sm) {
-    padding: 1rem !important;
+    padding: 0.7rem !important;
   }
   padding: 3rem !important;
   text-transform: uppercase;
@@ -38,5 +37,5 @@
 }
 
 .activelink {
-  background-color: #ffb703 !important;
+  background-color: rgba(251, 133, 0, 0.7) !important;
 }

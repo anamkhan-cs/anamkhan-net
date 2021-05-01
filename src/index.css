@@ -2,6 +2,8 @@
 html, body {
   max-width: 100%;
   overflow-x: hidden;
+  max-height: 100%;
+  overflow-y: hidden;
 }
 
 body {
@@ -9,8 +11,8 @@ body {
   font-family: 'Poppins', sans-serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #8ecae6 !important;
-  color: #023047 !important;
+  background-color: #f1faee !important;
+  color: #FFDC82 !important;
 }
 
 code {

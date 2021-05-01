@@ -3,29 +3,38 @@
 @import "~bootstrap/scss/mixins";
 
 .container {
+  background: url("blue-background.jpg") fixed center no-repeat;
+  background-size: cover;
+  padding-top: 4rem;
+  padding-bottom: 100%;
 }
 
 .header {
   font-weight: bolder;
-  border-bottom: 0.3rem solid #fb8500;
+  border-bottom: 0.3rem solid #ffb703;
   text-transform: uppercase;
-  margin-right: 14rem;
-  margin-top: 4rem;
-}
-
-.contentContainer {
-  margin-top: 2rem;
-  font-size: larger;
   margin-right: 12rem;
   @include media-breakpoint-down(sm) {
     margin-right: 8rem;
   }
-  padding-top: 3rem;
+  margin-bottom: 0;
+  text-shadow: 0 0 3px #023047;
+}
+
+.contentContainer {
+  font-size: larger;
+  font-weight: bold;
+  margin-right: 12rem;
+  @include media-breakpoint-down(sm) {
+    margin-right: 8rem;
+  }
+  text-shadow: 0 0 3px #023047;
+  background-color: rgba(229, 152, 155, 0.3) !important;
 }
 
 .iconContainer {
-  border-top: 0.1rem solid #fb8500;
-  background-color: #023047;
+  border-top: 0.1rem solid #ffb703;
+  background-color: rgba(2, 48, 71, 0.9);
   position: fixed;
   bottom: 0;
   width: 105%;
