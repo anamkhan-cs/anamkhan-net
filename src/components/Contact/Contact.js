@@ -4,6 +4,7 @@ import {
   contentContainer,
   icons,
   iconContainer,
+  picture,
 } from "./Contact.module.scss";
 import {
   GrLinkedin,
@@ -15,6 +16,8 @@ import {
 import { Container, Row } from "reactstrap";
 import classnames from "classnames";
 
+import smoosh from "./smoosh.jpg";
+
 const Contact = () => {
   return (
     <>
@@ -22,10 +25,14 @@ const Contact = () => {
         <h1 className={header}>Contact</h1>
         <div className={contentContainer}>
           <p>
-            If you would like to connect, please use any of the various social
-            media (there's a lot) linked below, or just send me an email!
+            If you would like to connect, my social media links are below
+            (there's quite a few lot), or feel free to just send me an email!
           </p>
-          <p>I can send a picture of my cats on request!</p>
+          <p>
+            Here's a picture of my cat (her name is Smoosh) as a reward for
+            making it this far!
+          </p>
+          <img src={smoosh} alt="My cat" className={picture} />
         </div>
       </Container>
       <Row>

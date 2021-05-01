@@ -4,14 +4,15 @@
 
 .header {
   font-weight: bolder;
-  border-bottom: 0.5rem solid #723d46;
+  border-bottom: 0.3rem solid #fb8500;
   text-transform: uppercase;
   margin-right: 14rem;
+  margin-top: 4rem;
 }
 
 .container {
-  margin-top: 10rem;
-  margin-bottom: 10rem;
+  margin-top: 4rem;
+  // margin-bottom: 10rem;
 }
 
 .contentContainer {
@@ -19,26 +20,35 @@
   font-size: larger;
   margin-right: 12rem;
   @include media-breakpoint-down(sm) {
-    margin-right: 5rem;
+    margin-right: 8rem;
   }
   padding-top: 3rem;
 }
 
 .iconContainer {
-  margin-top: 10rem;
-  border-top: 0.1rem solid #723d46;
+  margin-top: 5rem;
+  border-top: 0.1rem solid #fb8500;
   padding-top: 3rem !important;
-  background-color: #472d30;
+  background-color: #8ecae6;
   width: 105vw;
   height: 10vh;
   z-index: 1;
 }
 
 .icons {
-  color: #723d46;
+  color: #ffb703;
   margin-right: 3rem;
   font-size: 40px;
   @include media-breakpoint-down(sm) {
     font-size: 20px;
+  }
+}
+
+.picture {
+  height: 20rem;
+  width: 30rem;
+  @include media-breakpoint-down(sm) {
+    height: 10rem;
+    width: 15rem;
   }
 }
