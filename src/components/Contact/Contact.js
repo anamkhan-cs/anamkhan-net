@@ -41,7 +41,7 @@ const Contact = () => {
               Linked Here
             </a>
           </p>
-          <p>Here's a picture of my cat Smoosh for making it this far!</p>
+          <p>Here's a picture of Smoosh for making it this far!</p>
           <img src={smoosh} alt="My cat" className={picture} />
         </div>
       </Container>

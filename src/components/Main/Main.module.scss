@@ -3,24 +3,8 @@
 @import "~bootstrap/scss/mixins";
 
 .home {
-  position: relative;
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  &::before {
-    content: "";
-    background-image: url("background.jpg");
-    background-size: cover;
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    opacity: 0.7;
-  }
+  background: url("./background.jpg") fixed center no-repeat;
+  background-size: cover;
 }
 
 .content {
@@ -38,8 +22,8 @@
     font-size: 50px;
   }
   font-weight: bolder;
-  text-shadow: 0 0 3px #fb8500;
-  color: #e5989b;
+  text-shadow: 0 0 3px black;
+  color: #ef6e6b;
 }
 
 .about {
@@ -50,5 +34,5 @@
   }
   color: #fb8500;
   font-weight: bolder;
-  text-shadow: 0 0 3px #023047;
+  text-shadow: 0 0 3px black;
 }
