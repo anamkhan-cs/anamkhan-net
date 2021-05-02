@@ -31,13 +31,14 @@ const Contact = () => {
             few), or feel free to shoot me an email!
           </p>
           <p>
-            You can see this project on my{" "}
+            You can see this project on my Github{" "}
             <a
               href="https://github.com/anamkhan2/anamkhan-net"
               target="_blank"
               rel="noreferrer"
+              style={{ color: "#ffb703" }}
             >
-              Github
+              Linked Here
             </a>
           </p>
           <p>Here's a picture of my cat Smoosh for making it this far!</p>

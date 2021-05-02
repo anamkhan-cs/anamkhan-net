@@ -1,13 +1,64 @@
+import { Container, Row, Col } from "reactstrap";
+import {
+  container,
+  header,
+  contentContainer,
+  icons,
+} from "./Experience.module.scss";
+import { TiLocation } from "react-icons/ti";
+
 const Experience = () => {
   return (
-    <h1>
-      <div>Sleek</div>
-      <div className="with--accent">animated</div>
-      <div>views</div>
+    <Container fluid className={container}>
       <div>
-        for <span className="with--accent">web apps</span>
+        <h1 className={header}>Education</h1>
       </div>
-    </h1>
+      <div className={contentContainer}>
+        <p>
+          <div className="d-flex justify-content-between align-items-center">
+            <span> Master of Science</span>
+            <span>
+              |
+              <a
+                href="https://goo.gl/maps/7P2CoU66CrHgRoC36"
+                target="_blank"
+                rel="noreferrer"
+                className={icons}
+              >
+                <TiLocation /> Northwestern University
+              </a>
+              | Aug 2019 - Dec 2020{" "}
+            </span>
+          </div>
+          <div>
+            Computer Science |<span> GPA: 3.8</span>
+          </div>
+        </p>
+        <p>
+          <div className="d-flex justify-content-between align-items-center">
+            <span>Bachelor of Engineering</span>
+            <span>
+              |
+              <a
+                href="https://goo.gl/maps/Bq9Wvbcbp9BQGWmg8"
+                target="_blank"
+                rel="noreferrer"
+                className={icons}
+              >
+                <TiLocation /> Visvesvaraya Technological University
+              </a>
+              | Aug 2015 - May 2019
+            </span>
+          </div>
+          <div>
+            Computer Science |<span> GPA: 3.5</span>
+          </div>
+        </p>
+      </div>
+      <div>
+        <h1 className={header}>Experience</h1>
+      </div>
+    </Container>
   );
 };
 
