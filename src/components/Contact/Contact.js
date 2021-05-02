@@ -27,11 +27,11 @@ const Contact = () => {
         </div>
         <div className={contentContainer}>
           <p>
-            Connect with me through my social media links below (there's quite a
-            few), or feel free to shoot me an email!
+            Connect with me through my social media, or feel free to shoot me an
+            email!
           </p>
           <p>
-            You can see this project on my Github{" "}
+            See this project on my Github{" "}
             <a
               href="https://github.com/anamkhan2/anamkhan-net"
               target="_blank"
