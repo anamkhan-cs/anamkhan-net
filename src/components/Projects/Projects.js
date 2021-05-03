@@ -1,5 +1,14 @@
+import { Container } from "reactstrap";
+import { container, header } from "./Projects.module.scss";
+
 const Projects = () => {
-  return <h1>Dummy 4</h1>;
+  return (
+    <Container fluid className={container}>
+      <div>
+        <h1 className={header}>Projects</h1>
+      </div>
+    </Container>
+  );
 };
 
 export default Projects;
