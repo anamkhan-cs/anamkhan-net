@@ -2,8 +2,6 @@
 html, body {
   max-width: 100%;
   overflow-x: hidden;
-  max-height: 100%;
-  overflow-y: hidden;
 }
 
 body {
@@ -12,7 +10,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #f1faee !important;
-  color: #FFDC82 !important;
+  color: #fdffb6 !important;
 }
 
 code {
