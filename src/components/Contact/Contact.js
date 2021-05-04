@@ -5,6 +5,7 @@ import {
   icons,
   iconContainer,
   picture,
+  containerAll,
 } from "./Contact.module.scss";
 import {
   GrLinkedin,
@@ -22,27 +23,29 @@ const Contact = () => {
   return (
     <>
       <Container className={container} fluid>
-        <div>
-          <h1 className={header}>Contact</h1>
-        </div>
-        <div className={contentContainer}>
-          <p>
-            Connect with me through my social media, or feel free to shoot me an
-            email!
-          </p>
-          <p>
-            See this project on my Github{" "}
-            <a
-              href="https://github.com/anamkhan2/anamkhan-net"
-              target="_blank"
-              rel="noreferrer"
-              style={{ color: "#ffb703" }}
-            >
-              Linked Here
-            </a>
-          </p>
-          <p>Here's a picture of Smoosh for making it this far!</p>
-          <img src={smoosh} alt="My cat" className={picture} />
+        <div className={containerAll}>
+          <div>
+            <h1 className={header}>Contact</h1>
+          </div>
+          <div className={contentContainer}>
+            <p>
+              Connect with me through my social media, or feel free to shoot me
+              an email!
+            </p>
+            <p>
+              See this project on my Github{" "}
+              <a
+                href="https://github.com/anamkhan2/anamkhan-net"
+                target="_blank"
+                rel="noreferrer"
+                style={{ color: "#ffddd2" }}
+              >
+                Linked Here
+              </a>
+            </p>
+            <p>Here's a picture of Smoosh for making it this far!</p>
+            <img src={smoosh} alt="My cat" className={picture} />
+          </div>
         </div>
       </Container>
       <footer className="footer">

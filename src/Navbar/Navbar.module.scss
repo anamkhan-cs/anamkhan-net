@@ -3,13 +3,14 @@
 @import "~bootstrap/scss/mixins";
 
 .navbar {
-  background-color: rgba(255, 205, 178, 0.7) !important;
+  background-color: rgba(255, 221, 210, 0.9) !important;
   @include media-breakpoint-down(sm) {
     height: 28vh;
+    width: 4rem;
   }
   position: fixed;
   right: 0px;
-  height: 75 vh;
+  height: 73vh;
 }
 
 .navitem {
@@ -17,19 +18,24 @@
 }
 
 .navbartoggler {
-  background-color: rgba(255, 205, 178, 0.7) !important;
+  background-color: rgba(255, 221, 210, 0.8) !important;
   width: 7rem !important;
+  @include media-breakpoint-down(sm) {
+    width: 4rem !important;
+  }
 }
 
 .navlink {
-  color: #7f5539 !important;
+  color: #e29578 !important;
   text-align: center;
   @include media-breakpoint-down(sm) {
     padding: 0.7rem !important;
   }
   padding: 3rem !important;
-  text-transform: uppercase;
   font-weight: bolder;
+  @include media-breakpoint-down(sm) {
+    font-size: 0.5rem !important;
+  }
 }
 
 .navlink:hover {
@@ -37,5 +43,5 @@
 }
 
 .activelink {
-  background-color: rgba(251, 133, 0, 0.7) !important;
+  background-color: rgba(131, 197, 190, 0.7) !important;
 }
