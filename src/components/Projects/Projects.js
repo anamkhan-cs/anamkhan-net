@@ -19,6 +19,8 @@ import meetnewfriends from "./assets/meetnewfriends.png";
 import spoil1 from "./assets/spoil1.png";
 import spoil2 from "./assets/spoil2.png";
 import racket from "./assets/racket.mp4";
+import sentiment1 from "./assets/sentiment1.png";
+import sentiment2 from "./assets/sentiment2.png";
 
 const Projects = () => {
   return (
@@ -26,6 +28,29 @@ const Projects = () => {
       <div className={containerAll}>
         <div>
           <h1 className={header}>Projects</h1>
+        </div>
+
+        <div className="mt-3">
+          <div className="d-flex justify-content-between align-items-center mb-1">
+            <span className={names}>
+              Personal Website |
+              <a
+                href="https://github.com/anamkhan2/anamkhan-net"
+                target="_blank"
+                rel="noreferrer"
+                className={icons}
+              >
+                <AiOutlineLink /> Github Linked Here
+              </a>
+            </span>
+            <span>Sping 2021</span>
+          </div>
+          <div className={using}>ReactJS, Boostrap, Reactstrap, HTML/CSS</div>
+          <div className="mt-1">
+            <ul>
+              <li>Designed a personal website to better showcase my work</li>
+            </ul>
+          </div>
         </div>
 
         <div className="mt-3">
@@ -254,9 +279,87 @@ const Projects = () => {
           <div className="mt-1">
             <ul>
               <li>
-                Aims to follow the current crisis of wasted food by attaching a
-                device to the refrigerator that maintains a list of food, their
-                expiration dates and a dynamic grocery list
+                Aims to alleviate the current crisis of wasted food by attaching
+                a device to your refrigerator that maintains a list of food,
+                their expiration dates and a dynamic grocery list
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div>
+          <div className="d-flex justify-content-between align-items-center">
+            <span className={names}>
+              Sentiment Analysis of Social Media |
+              <a
+                href="https://github.com/anamkhan2/Sentiment_Analysis"
+                target="_blank"
+                rel="noreferrer"
+                className={icons}
+              >
+                <AiOutlineLink />
+                Github Linked Here
+              </a>
+            </span>
+            <span>BMS Institute of Technology | Spring 2019</span>
+          </div>
+          <div className={classnames(using, "mb-1")}>
+            Tweepy, NLTK, VADER algorithm, Tableau
+          </div>
+          <div>
+            <div className="d-flex justify-content-between align-items-center">
+              <img
+                src={sentiment1}
+                alt="sentiment analysis1"
+                height="250"
+                width="350"
+              />
+              <img
+                src={sentiment2}
+                alt="sentiment analysis2"
+                height="250"
+                width="350"
+              />
+            </div>
+          </div>
+          <div className="mt-1">
+            <ul>
+              <li>
+                Capstone project which analysed microblogs on Twitter to gather
+                information and reactions to just about anything.
+              </li>
+              <li>
+                By learning about customer base reactions, customised marketing
+                strategies can be developed
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div>
+          <div className="d-flex justify-content-between align-items-center">
+            <span className={names}>
+              Artform Platform |
+              <a
+                href="https://github.com/anamkhan2/ArtformPlatform"
+                target="_blank"
+                rel="noreferrer"
+                className={icons}
+              >
+                <AiOutlineLink />
+                Github Linked Here
+              </a>
+            </span>
+            <span>BMS Institute of Technology | Fall 2018</span>
+          </div>
+          <div className={classnames(using, "mb-1")}>
+            Javascript, PHP, MySQL HTML, CSS, Bootstrap
+          </div>
+          <div className="mt-1">
+            <ul>
+              <li>
+                A web platform for artists to display their work, network in the
+                community allowing them to collaborate and create
               </li>
             </ul>
           </div>
