@@ -9,8 +9,10 @@ const Main = () => {
           <div className={name}>Anam</div>
           <div className={name}>Khan</div>
           <div className={about}>
-            Full stack software engineer, lover of cats and movies, especially
-            when it's movies about cats
+            <div className="mr-3">
+              Full stack software engineer, lover of cats and movies, especially
+              when it's movies about cats
+            </div>
           </div>
         </div>
       </Container>
