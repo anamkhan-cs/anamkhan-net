@@ -2,14 +2,8 @@ import { Container } from "reactstrap";
 import { AiOutlineLink } from "react-icons/ai";
 import classnames from "classnames";
 
-import {
-  container,
-  header,
-  containerAll,
-  icons,
-  names,
-  using,
-} from "./Projects.module.scss";
+import { header, icons, names, using } from "./Projects.module.scss";
+import { container, containerAll } from "../CommonStyles.module.scss";
 import cpdVid from "./assets/cpdVid.mp4";
 import exquiro from "./assets/exquiro.mp4";
 import healthtracker1 from "./assets/healthtracker1.png";
@@ -21,10 +15,12 @@ import spoil2 from "./assets/spoil2.png";
 import racket from "./assets/racket.mp4";
 import sentiment1 from "./assets/sentiment1.png";
 import sentiment2 from "./assets/sentiment2.png";
+import NavbarMenu from "../../Navbar/Navbar";
 
 const Projects = () => {
   return (
     <Container fluid className={container}>
+      <NavbarMenu />
       <div className={containerAll}>
         <div>
           <h1 className={header}>Projects</h1>

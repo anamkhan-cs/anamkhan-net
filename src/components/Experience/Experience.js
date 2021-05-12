@@ -1,16 +1,14 @@
 import { Container } from "reactstrap";
-import {
-  container,
-  header,
-  contentContainer,
-  icons,
-  containerAll,
-} from "./Experience.module.scss";
+import { header, contentContainer, icons } from "./Experience.module.scss";
+import { container, containerAll } from "../CommonStyles.module.scss";
 import { TiLocation } from "react-icons/ti";
+
+import NavbarMenu from "../../Navbar/Navbar";
 
 const Experience = () => {
   return (
     <Container fluid className={container}>
+      <NavbarMenu />
       <div className={containerAll}>
         <div>
           <h1 className={header}>Education</h1>

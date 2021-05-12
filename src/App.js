@@ -56,8 +56,6 @@ const App = () => (
         );
       }}
     />
-
-    <NavbarMenu />
   </Router>
 );
 

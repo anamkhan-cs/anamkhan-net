@@ -8,9 +8,9 @@
     height: 28vh;
     width: 4rem;
   }
-  position: fixed;
   right: 0px;
-  height: 73vh;
+  height: 100vh;
+  z-index: 100 !important;
 }
 
 .navbartoggler {

@@ -10,11 +10,13 @@ import {
 } from "./Main.module.scss";
 import { MdPictureAsPdf } from "react-icons/md";
 import resume from "./resume.pdf";
+import NavbarMenu from "../../Navbar/Navbar";
 
 const Main = () => {
   return (
     <>
       <Container fluid className={home}>
+        <NavbarMenu />
         <div className={content}>
           <div className={name}>Anam</div>
           <div className={name}>Khan</div>

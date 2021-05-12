@@ -29,17 +29,14 @@ import { GiAtom } from "react-icons/gi";
 import { GrReactjs, GrMysql } from "react-icons/gr";
 import { FaJira, FaDocker } from "react-icons/fa";
 
-import {
-  container,
-  header,
-  containerAll,
-  subheading,
-  icons,
-} from "./Skills.module.scss";
+import { header, subheading, icons } from "./Skills.module.scss";
+import { container, containerAll } from "../CommonStyles.module.scss";
+import NavbarMenu from "../../Navbar/Navbar";
 
 const Skills = () => {
   return (
     <Container fluid className={container}>
+      <NavbarMenu />
       <div className={containerAll}>
         <div>
           <h1 className={header}>Skills</h1>

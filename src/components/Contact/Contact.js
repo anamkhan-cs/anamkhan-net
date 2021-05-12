@@ -1,12 +1,14 @@
+import { Container } from "reactstrap";
+import classnames from "classnames";
+
 import {
   header,
-  container,
   contentContainer,
   icons,
   iconContainer,
   picture,
-  containerAll,
 } from "./Contact.module.scss";
+import { container, containerAll } from "../CommonStyles.module.scss";
 import {
   GrLinkedin,
   GrGithub,
@@ -15,15 +17,14 @@ import {
   GrInstagram,
   GrStackOverflow,
 } from "react-icons/gr";
-import { Container } from "reactstrap";
-import classnames from "classnames";
-
 import smoosh from "./smoosh.jpg";
+import NavbarMenu from "../../Navbar/Navbar";
 
 const Contact = () => {
   return (
     <>
       <Container className={container} fluid>
+        <NavbarMenu />
         <div className={containerAll}>
           <div>
             <h1 className={header}>Contact</h1>

@@ -34,15 +34,6 @@
   }
 }
 
-.contentContainer {
-  font-size: 1rem;
-  font-weight: bold;
-  margin-bottom: 2rem;
-  @include media-breakpoint-down(md) {
-    font-size: 0.5rem;
-  }
-}
-
 .icons {
   color: #ffddd2 !important;
   font-size: 5rem;
