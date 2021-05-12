@@ -70,7 +70,7 @@ const Projects = () => {
           </div>
           <div className={using}>SQL, Tableau, Observable/D3</div>
           <div>
-            <video width="400" height="300" controls autoplay>
+            <video width="400" height="300" controls autoPlay>
               <source src={cpdVid} type="video/mp4" />
               Your browser does not support the video tag.
             </video>
@@ -78,7 +78,7 @@ const Projects = () => {
           <div className="mt-1">
             <ul>
               <li>
-                Analysed the Chicago Police Database to find conclusive evidence
+                Analyzed the Chicago Police Database to find conclusive evidence
                 about the role race plays in the department. Tried to answer
                 questions such as - how the race of the victim affects the
                 verdict, the compensation offered and how the perpetrator's race
@@ -108,7 +108,7 @@ const Projects = () => {
             Google Search API, Rake Algorithm, Apps Script, HTML
           </div>
           <div>
-            <video width="400" height="250" controls autoplay>
+            <video width="400" height="250" controls autoPlay>
               <source src={exquiro} type="video/mp4" />
               Your browser does not support the video tag.
             </video>
@@ -168,11 +168,10 @@ const Projects = () => {
           <div className="mt-1">
             <ul>
               <li>
-                Health tracker app that allows student to track his temperature
-                and other symptoms. The professor can view his students health
-                stats to be more aware of how his class feels. In case the
-                student is deemed sick, the information is sent to the Health
-                Services department.
+                Health tracker app that allows students to track temperature and
+                other symptoms. The professor can view students health stats and
+                be more informed. In case the student is deemed sick, the
+                information is sent to the Health Services department.
               </li>
             </ul>
           </div>
@@ -210,9 +209,9 @@ const Projects = () => {
           <div className="mt-1">
             <ul>
               <li>
-                A networking website that helps Northwestern freshman find
-                common interests and build connections by participating in
-                various events created by other students
+                A networking website that helps Northwestern freshman build
+                connections by participating in various events created by other
+                students with common interests
               </li>
             </ul>
           </div>
@@ -237,7 +236,7 @@ const Projects = () => {
           <div className={classnames(using, "mb-1")}>Racket</div>
           <div>
             <div className="d-flex justify-content-between align-items-center">
-              <video width="400" height="250" controls autoplay>
+              <video width="400" height="250" controls autoPlay>
                 <source src={racket} type="video/mp4" />
                 Your browser does not support the video tag.
               </video>

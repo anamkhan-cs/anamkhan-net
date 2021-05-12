@@ -1,5 +1,15 @@
 import { Container } from "reactstrap";
-import { home, content, name, about } from "./Main.module.scss";
+
+import {
+  home,
+  content,
+  name,
+  about,
+  icons,
+  resumelink,
+} from "./Main.module.scss";
+import { MdPictureAsPdf } from "react-icons/md";
+import resume from "./resume.pdf";
 
 const Main = () => {
   return (
@@ -10,8 +20,18 @@ const Main = () => {
           <div className={name}>Khan</div>
           <div className={about}>
             <div className="mr-3">
-              Full stack software engineer, lover of cats and movies, especially
-              when it's movies about cats
+              Full stack engineer. I like cats, movies, crocheting, traveling
+              and I care about empowering women in tech
+              <div className={resumelink}>
+                <MdPictureAsPdf className={icons} />
+                <a
+                  href={resume}
+                  download="anamkhanresume"
+                  style={{ color: "#006d77" }}
+                >
+                  Here's my resume
+                </a>
+              </div>
             </div>
           </div>
         </div>

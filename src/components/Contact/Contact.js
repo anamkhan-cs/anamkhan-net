@@ -13,6 +13,7 @@ import {
   GrMail,
   GrFacebookOption,
   GrInstagram,
+  GrStackOverflow,
 } from "react-icons/gr";
 import { Container } from "reactstrap";
 import classnames from "classnames";
@@ -62,7 +63,6 @@ const Contact = () => {
           >
             <GrMail className={icons} />
           </a>
-
           <a
             href="https://www.linkedin.com/in/anamkhan-cs"
             target="_blank"
@@ -70,7 +70,6 @@ const Contact = () => {
           >
             <GrLinkedin className={icons} />
           </a>
-
           <a
             href="https://github.com/anamkhan2"
             target="_blank"
@@ -78,7 +77,13 @@ const Contact = () => {
           >
             <GrGithub className={icons} />
           </a>
-
+          <a
+            href="https://stackoverflow.com/users/13950369/anam-khan"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <GrStackOverflow className={icons} />
+          </a>
           <a
             href="https://www.facebook.com/anam.partyrockanthem/"
             target="_blank"
@@ -86,7 +91,6 @@ const Contact = () => {
           >
             <GrFacebookOption className={icons} />
           </a>
-
           <a
             href="https://www.instagram.com/anamgkhan/"
             target="_blank"

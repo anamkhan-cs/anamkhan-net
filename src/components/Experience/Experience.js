@@ -88,13 +88,13 @@ const Experience = () => {
                 <li>
                   Developing new features, streamlining the UI and refactoring
                   existing code. Replacing a legacy tool used to manage articles
-                  and it's relevant data which is hosted on their website. App
-                  built with Reactjs, styling done using reactstrap, bootstrap,
-                  unit testing through Jest
+                  and it's relevant data hosted on their website. App built with
+                  Reactjs, styling done using reactstrap, bootstrap, unit
+                  testing through Jest
                 </li>
                 <li>
                   Python application to facilitate creation of multiple assets
-                  in batches, using a .csv file, increasing efficiency,
+                  in batches by reading a .csv file, increasing efficiency,
                   productivity and reducing time
                 </li>
               </ul>
@@ -143,7 +143,7 @@ const Experience = () => {
               <ul>
                 <li>
                   Built a Chatbot to parse user input and perform an intelligent
-                  search on Homes.com, streamlining their user experience by
+                  search for Homes.com, streamlining their user experience by
                   20%. Used Google Dialogflow for NLP, Angular5/6 to build a
                   mock site and a Firebase database
                 </li>
@@ -179,6 +179,43 @@ const Experience = () => {
                 </li>
               </ul>
             </div>
+          </div>
+
+          <div>
+            <a
+              href="https://goo.gl/maps/6iMhQdpMaMBYPcPFA"
+              target="_blank"
+              rel="noreferrer"
+              className={icons}
+            >
+              <TiLocation /> ITC Infotech
+            </a>
+            <div className="d-flex justify-content-between align-items-center">
+              <span>Cyber Security Intern</span>
+              <span>| Mar 2018 - May 2018</span>
+            </div>
+            <div>
+              <ul>
+                <li>
+                  Ethical hacking and cyber security through the Kali Linux
+                  platform
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h1 className={header}>Involvement</h1>
+        </div>
+        <div className={contentContainer}>
+          <div className="d-flex justify-content-between align-items-center">
+            <span>SWE (Society of Women Engineers)</span>
+            <span>| Aug 2019 - Present </span>
+          </div>
+          <div className="d-flex justify-content-between align-items-center">
+            <span>Developer Student Club (a Google Initiative)</span>
+            <span>| Aug 2016 - March 2019 </span>
           </div>
         </div>
       </div>
