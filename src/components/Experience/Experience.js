@@ -53,7 +53,7 @@ const Experience = () => {
             Networking, Human Computer Interaction, Algorithms, Data Structures,
             Computer Architecture, Object Oriented Programming, Software
             Engineering, Databases, Operating Systems, Machine Learning,
-            Distributed Systems, Deep Learning,
+            Distributed Systems, Deep Learning
           </p>
         </div>
 
