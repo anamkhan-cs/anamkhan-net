@@ -72,7 +72,7 @@ const Contact = () => {
             <GrLinkedin className={icons} />
           </a>
           <a
-            href="https://github.com/anamkhan2"
+            href="https://github.com/anamkhan-cs"
             target="_blank"
             rel="noreferrer"
           >
