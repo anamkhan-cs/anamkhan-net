@@ -10,7 +10,6 @@ import Experience from "./components/Experience/Experience";
 import Contact from "./components/Contact/Contact";
 import Projects from "./components/Projects/Projects";
 import Skills from "./components/Skills/Skills";
-import NavbarMenu from "./Navbar/Navbar";
 import { play, exit } from "./timelines/index";
 
 const App = () => (
